@@ -93,21 +93,21 @@ public class MainController {
    @RequestMapping({ "/buyProduct" })
    public String listProductHandler(HttpServletRequest request, Model model, //
          @RequestParam(value = "code", defaultValue = "") String code) {
- 
+
       Product product = null;
       if (code != null && code.length() > 0) {
          product = productDAO.findProduct(code);
       }
       if (product != null) {
- 
+
          //
          CartInfo cartInfo = Utils.getCartInSession(request);
- 
+
          ProductInfo productInfo = new ProductInfo(product);
- 
+
          cartInfo.addProduct(productInfo, 1);
       }
- 
+
       return "redirect:/shoppingCart";
    }
  
