@@ -15,7 +15,7 @@
 - Chưa có chức năng lọc (filter) theo thuộc tính sản phẩm
 - Chua có giao diện sản phẩm chi tiết
 ## Sơ đồ quan hệ thực thể (ER Diagram)
-![ERD](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/11ecf02a5c90fb0bda79f8c366fa7bd2f695a1b9/ERD.png)
+![ERD](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/ERD.png)
 - Mối quan hệ một-nhiều giữa Account và Order: Mỗi tài khoản (Account) có thể có nhiều đơn hàng (Order), trong khi một đơn hàng chỉ thuộc về một tài khoản.
 
 - Mối quan hệ một-nhiều giữa Product và OrderDetail: Mỗi sản phẩm (Product) có thể xuất hiện trong nhiều chi tiết đơn hàng (OrderDetail), trong khi một chi tiết đơn hàng chỉ thuộc về một sản phẩm.
@@ -65,7 +65,35 @@ Project có cấu trúc mã nguồn theo mô hình Maven
 - Truy cập vào đường dẫn http://localhost:8080/ để sử dụng website
 - Ảnh sản phẩm em để ở mục src/main/resources/static/img trong trường hợp thầy muốn tạo sản phẩm mới
 - **Lưu ý**: khi em sử dụng trêm brower google chorme thì khi chạy trang web thì nó bị lỗi phông chữ như sau:
-![error](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/6a73d1859e875ba32053f14f2b81e5f5b2b0da78/error.png)
+![error](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/error.png)
 - Nhưng khi chạy ở Microsoft Edge thì nó hiện ra trang chủ như bình thường:
-![homepage](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/895bae7cea0ae00566fdda84b06346a2ba3fcdee/homepage.png)
-## Postman snapshot
+![homepage](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/homepage.png)
+## Postman APIs snapshot
+### GET: Login (/admin/login)
+![GET-admin-login](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-admin-login.png)
+### GET: Admin Page (/admin/accountInfo)
+![GET-admin-accountInfo](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-admin-accountInfo.png)
+### GET: Order List Page (/admin/orderList)
+![GET-admin-orderList](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-admin-orderList.png)
+### GET: Create Product Page (/admin/product)
+![GET-admin-product](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-admin-product.png)
+### POST: Save Product (/admin/product)
+![POST-admin-product](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/POST-admin-product.png)
+### GET: Order Detail Page (/admin/order)
+![GET-admin-order](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-admin-order.png)
+### POST: Update Quantity Of Product In Cart (/shoppingCart)
+![POST-shoppingCart](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/POST-shoppingCart.png)
+### GET: Cart Page (/shoppingCart)
+![GET-shoppingCart](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-shoppingCart.png)
+### GET: Customer Information Page (/shoppingCartCustomer)
+![GET-shoppingCartCustomer](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-shoppingCartCustomer.png)
+### POST: Save Customer Information (/shoppingCartCustomer)
+![POST-shoppingCartCustomer](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/POST-shoppingCartCustomer.png)
+### GET: Confirm Information Page (/shoppingCartConfirmation)
+![GET-shoppingCartConfirmation](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-shoppingCartConfirmation.png)
+### POST: Submit Cart (/shoppingCartConfirmation)
+![POST-shoppingCartConfirmation](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/POST-shoppingCartConfirmation.png)
+### GET: Thank You Page (/shoppingCartFinalize)
+![GET-shoppingCartFinalize](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-shoppingCartFinalize.png)
+### GET: Image's Product Page (/productImage)
+![GET-productImage](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/GET-productImage.png)
