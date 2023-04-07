@@ -35,8 +35,8 @@
                                         <a th:href="@{|/buyProduct?code=${prodInfo.code}|}" class="btn btn-link" >Buy Now</a>
                                     </div>
                             </div>
-                             <!-- For Manager edit Product -->
-                            <th:block sec:authorize="hasAuthority('ROLE_MANAGER')">
+                             <!-- For ADMIN edit Product -->
+                            <th:block sec:authorize="hasAuthority('ROLE_ADMIN')">
                                  <a style="color:red;"
                                     th:href="@{|/admin/product?code=${prodInfo.code}|}">Edit Product</a>
 

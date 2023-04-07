@@ -14,14 +14,14 @@
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/shoppingCart}">Cart</a>
                 </li>
-                <th:block sec:authorize="hasAnyRole('ROLE_MANAGER','ROLE_EMPLOYEE')">
+                <th:block sec:authorize="hasAnyRole('ROLE_ADMIN','ROLE_CUSTOMER')">
                     <li class="nav-item">
                         <a th:href="@{/admin/orderList}" class="nav-link">
                             Order List
                         </a>
                     </li>
                 </th:block>
-                <th:block sec:authorize="hasRole('ROLE_MANAGER')">
+                <th:block sec:authorize="hasRole('ROLE_ADMIN')">
                     <li class="nav-item">
                         <a th:href="@{/admin/product}" class="nav-link">
                             Create Product

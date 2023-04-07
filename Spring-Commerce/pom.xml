@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SpringShoppingCart2</artifactId>
+	<artifactId>SpringCommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringShoppingCart2</name>
 	<description>Spring Shopping Cart 2</description>

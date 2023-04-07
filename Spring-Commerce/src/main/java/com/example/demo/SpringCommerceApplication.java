@@ -25,14 +25,14 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
         DataSourceTransactionManagerAutoConfiguration.class, //
         HibernateJpaAutoConfiguration.class })
 
-public class SpringShoppingCart2Application {
+public class SpringCommerceApplication {
 	
 
     @Autowired
     private Environment env;
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringShoppingCart2Application.class, args);
+		SpringApplication.run(SpringCommerceApplication.class, args);
 	}
 	
 	@Bean(name = "dataSource")
