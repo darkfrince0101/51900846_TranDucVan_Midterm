@@ -63,3 +63,9 @@ Project có cấu trúc mã nguồn theo mô hình Maven
 - Vào application.properties thay đổi username, password tương ứng với account đã đăng nhập trong MySQL Workbench
 - Chạy project bằng file main SpringCommerceApplication.java
 - Truy cập vào đường dẫn http://localhost:8080/ để sử dụng website
+- Ảnh sản phẩm em để ở mục src/main/resources/static/img trong trường hợp thầy muốn tạo sản phẩm mới
+- **Lưu ý**: khi em sử dụng trêm brower google chorme thì khi chạy trang web thì nó bị lỗi phông chữ như sau:
+![error](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/6a73d1859e875ba32053f14f2b81e5f5b2b0da78/error.png)
+- Nhưng khi chạy ở Microsoft Edge thì nó hiện ra trang chủ như bình thường:
+![homepage](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/895bae7cea0ae00566fdda84b06346a2ba3fcdee/homepage.png)
+## Postman snapshot
