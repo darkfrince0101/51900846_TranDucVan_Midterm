@@ -13,7 +13,7 @@
 ## Các hạn chế:
 - Giao diện đơn giản
 - Chưa có chức năng lọc (filter) theo thuộc tính sản phẩm
-- Chua có giao diện sản phẩm chi tiết
+- Chưa có giao diện sản phẩm chi tiết
 ## Sơ đồ quan hệ thực thể (ER Diagram)
 ![ERD](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/ERD.png)
 - Mối quan hệ một-nhiều giữa Account và Order: Mỗi tài khoản (Account) có thể có nhiều đơn hàng (Order), trong khi một đơn hàng chỉ thuộc về một tài khoản.
@@ -38,7 +38,7 @@ Project tuân theo kiến trúc MVC, trong đó:
 ### Thymeleaf templates
 - Project sử dụng Thymeleaf, một công cụ Java template phía server để tạo các trang HTML động, giúp dễ dàng tùy chỉnh và cập nhật giao diện người dùng
 ## Code Structure
-- Project bao gồm các folder: Spring-Commerce, các file ảnh ERD, API và file README
+- Project bao gồm các folder: Spring-Commerce, folder result_img chứa các hình ảnh và file README
 Project có cấu trúc mã nguồn theo mô hình Maven
 ### 'src/main/java'
 - 'com.example.demo': package cơ bản của project
@@ -58,13 +58,13 @@ Project có cấu trúc mã nguồn theo mô hình Maven
 ## Step to run
 - Clone project bằng lệnh git clone 
 - Mở project Spring-Commerce bằng IDE 
-- install các dependency trong file pom.xml
-- Trong MySQL Workbench: tạo một cơ sở dữ liệu tên là 'springcommerce', giải nén file zip spring_commerce.zip và đặt file sql vào trong MySQL Workbench và chạy các query cấu hình cho database springcommerce
+- Install các dependency trong file pom.xml
+- Trong MySQL Workbench: tạo một cơ sở dữ liệu tên là 'springcommerce', giải nén file spring_commerce.zip và exercute file sql vào MySQL Workbench để chạy các query cấu hình cho database springcommerce
 - Vào application.properties thay đổi username, password tương ứng với account đã đăng nhập trong MySQL Workbench
 - Chạy project bằng file main SpringCommerceApplication.java
 - Truy cập vào đường dẫn http://localhost:8080/ để sử dụng website
 - Ảnh sản phẩm em để ở mục src/main/resources/static/img trong trường hợp thầy muốn tạo sản phẩm mới
-- **Lưu ý**: khi em sử dụng trêm brower google chorme thì khi chạy trang web thì nó bị lỗi phông chữ như sau:
+- **Lưu ý**: khi em sử dụng trên brower google chorme thì khi chạy trang web thì nó bị lỗi phông chữ như sau:
 ![error](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/error.png)
 - Nhưng khi chạy ở Microsoft Edge thì nó hiện ra trang chủ như bình thường:
 ![homepage](https://github.com/darkfrince0101/51900846_TranDucVan_Midterm/blob/2a535305f05ff84552f1c97d87e330ddf084618d/result_img/homepage.png)
