@@ -100,7 +100,7 @@ public class MainController {
       }
       if (product != null) {
 
-         //
+
          CartInfo cartInfo = Utils.getCartInSession(request);
 
          ProductInfo productInfo = new ProductInfo(product);

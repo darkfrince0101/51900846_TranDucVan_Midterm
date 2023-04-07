@@ -60,7 +60,8 @@ public class AdminController {
  
       return "login";
    }
- 
+
+   // GET: Show Admin Page
    @RequestMapping(value = { "/admin/accountInfo" }, method = RequestMethod.GET)
    public String accountInfo(Model model) {
  
@@ -72,7 +73,8 @@ public class AdminController {
       model.addAttribute("userDetails", userDetails);
       return "accountInfo";
    }
- 
+
+   // GET: Show Order List Page
    @RequestMapping(value = { "/admin/orderList" }, method = RequestMethod.GET)
    public String orderList(Model model, //
          @RequestParam(value = "page", defaultValue = "1") String pageStr) {
@@ -132,7 +134,8 @@ public class AdminController {
  
       return "redirect:/productList";
    }
- 
+
+   // GET: Show Order Detail Page
    @RequestMapping(value = { "/admin/order" }, method = RequestMethod.GET)
    public String orderView(Model model, @RequestParam("orderId") String orderId) {
       OrderInfo orderInfo = null;
