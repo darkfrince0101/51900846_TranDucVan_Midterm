@@ -240,7 +240,8 @@ public class MainController {
  
       return "redirect:/shoppingCartFinalize";
    }
- 
+
+   // GET: Show Final Order Page.
    @RequestMapping(value = { "/shoppingCartFinalize" }, method = RequestMethod.GET)
    public String shoppingCartFinalize(HttpServletRequest request, Model model) {
  
@@ -252,7 +253,8 @@ public class MainController {
       model.addAttribute("lastOrderedCart", lastOrderedCart);
       return "shoppingCartFinalize";
    }
- 
+
+   // GET: Show Image's product
    @RequestMapping(value = { "/productImage" }, method = RequestMethod.GET)
    public void productImage(HttpServletRequest request, HttpServletResponse response, Model model,
          @RequestParam("code") String code) throws IOException {

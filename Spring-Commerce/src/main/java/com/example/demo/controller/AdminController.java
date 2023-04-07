@@ -93,7 +93,7 @@ public class AdminController {
       return "orderList";
    }
  
-   // GET: Show product.
+   // GET: Show new product.
    @RequestMapping(value = { "/admin/product" }, method = RequestMethod.GET)
    public String product(Model model, @RequestParam(value = "code", defaultValue = "") String code) {
       ProductForm productForm = null;
